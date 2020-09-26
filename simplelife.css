@@ -1,0 +1,240 @@
+/** this is where am going to put my general body styling **/
+body{
+    margin: 0;
+    font-family: ubuntu bold;
+    font-size: 1.125rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1{
+    font-family: lora;
+    font-weight: 400;
+    color: #173774;
+    font-size: 2rem;
+    margin: 0;
+}
+.simple p{
+    font-weight: bold;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    background: #f8f8f8;
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+footer{
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+}
+
+nav ul{
+   list-style: none;
+}
+
+nav li {
+    margin: .5em 0 .5em  -3em;
+}
+
+nav a{
+  color: #707070;
+  text-decoration: none;
+  font-weight: bold;
+  padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus{
+  color: #1792d2;
+}
+
+.current-page{
+    border-bottom: 1px solid #c7abab;
+}
+.current-page:hover{
+    color: #707070;
+    text-decoration: none;
+}
+
+.article-title{
+    font-size: 1.5rem;
+    font-style: lora;
+    font-weight: 400;
+    color: #173774;
+    margin-top: 0;
+    }
+
+    .article-info{
+        margin: 2em 0;
+    }
+    .article-head{
+       border-bottom: 2px solid #c7abab;
+       padding-bottom: 1em;
+       margin-bottom: 2em;
+       display: flex;
+       flex-direction: column;
+    }
+    .widgetimage{
+        order: 1;
+        margin-bottom: 3em;
+        width: 100%;
+    }
+    .articletitle{
+       order: 2; 
+    }
+    .articletext1{
+        order: 3;
+    }
+    .articletext2{
+        order: 4;
+    }
+    .readmore1{
+        order: 5;
+    }
+    .articletext3{
+        order: 6;
+    }
+    .articletext4{
+        order: 7;
+    }
+    .readmore2{
+        order: 8;
+    }
+    .articletext5{
+        order: 9;
+    }
+    .article-body{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .articlebody-main{
+        order: 2;
+    }
+    .articlebody-secondary{
+        order: 1;
+    }
+
+    .widget-subtitle{
+        font-style: lora;
+        font-weight: 400;
+        color: #173774;   
+    }
+    .widget-title{
+        color: #173774; 
+        font-weight: bold;
+        font-size: 1.5rem;  
+    }
+    .read-more,
+    .article-info{
+        font-size: .8rem;
+    }
+    .read-more{
+        text-decoration: none;
+        font-weight: bold;
+        color: #1792d2;
+    }
+    .read-more:hover,
+    .read-more:focus{
+        color: #707070;
+        text-decoration: underline;
+    }
+    a{
+        color: #1792d2;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus{
+        color: #707070;
+        text-decoration: underline;
+    }
+    strong{
+        font-weight: bold;
+    }
+    .widgetdiv-subtitle{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #c7abab;
+        margin-bottom: 1rem;
+    }
+    .widgetdiv-subtitle:last-child{
+        border: 0;
+        margin: 0;
+    }
+    .widget-subtitle{
+        order: 2;
+    }
+    .widget-image{
+        order: 1;
+    } 
+    
+@media(min-width: 675px){
+    .container-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        margin: 1em;
+    }
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+    .widget-main,
+    .widget-post{
+        border: 20px solid #efefef;
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+    .article-body{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .articlebody-main{
+        width: 70%;
+    }
+    .articlebody-secondary{
+        width: 28%;
+    }
+    .article-head{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-images{
+        order: -2;
+    }
+    .article-info{
+        order: -1;
+    }
+    .about-flex{
+        display: flex;
+    }
+    .widgetimage{
+        order: -5;
+    }
+    .articletitle{
+       order: -4; 
+    }
+}
+    
